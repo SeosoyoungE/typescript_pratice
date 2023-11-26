@@ -1,8 +1,18 @@
 //syntax
-let studentID:number =12345;
-let studentName:string ="soyoung"
-let courseCompleted = false;
+let studentID: number = 12345;
+let studentName: string = "soyoung";
+let courseCompleted: boolean = false;
 
-function getStudentDetails(studentID:number):void{
+interface Student {
+  studentID: number;
+  studentName: string;
+  courseCompleted: boolean;
+}
 
+function getStudentDetails(studentID: number): Student {
+  return {
+    studentID: 12345,
+    studentName: "soyoung",
+    courseCompleted: false,
+  };
 }
