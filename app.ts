@@ -9,9 +9,12 @@ let student1={
     courseCompleted: false,
 }
 interface Student {
-  studentID: number;
+  readonly studentID: number;
   studentName?: string; //optional
   courseCompleted: boolean;
+  //method정의법
+  //addComment(comment:string):string
+  addComment?:(comment:string)=>string
 }
 
 function getStudentDetails(studentID: number): Student {
