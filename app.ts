@@ -13,13 +13,14 @@ let student1={
     studentID: 12345,
     studentName: "soyoung",
     courseCompleted: false,
-    gender: GenderType.Male
+    gender: 'male'
 }
 interface Student {
   readonly studentID: number;
   studentName?: string; 
   courseCompleted: boolean;
-  gender: GenderType;
+  // gender: GenderType; enum사용
+  gender: 'male'|'female' //리터럴타입 사용
   //addComment(comment:string):string
   addComment?:(comment:string)=>string
 }
@@ -29,7 +30,7 @@ function getStudentDetails(studentID: number): Student {
     studentID: 12345,
     studentName: "soyoung",
     courseCompleted: false,
-    gender: GenderType.Female
+    gender: 'female'
   };
 }
 

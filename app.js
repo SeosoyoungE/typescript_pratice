@@ -12,14 +12,14 @@ var student1 = {
     studentID: 12345,
     studentName: "soyoung",
     courseCompleted: false,
-    gender: GenderType.Male
+    gender: 'male'
 };
 function getStudentDetails(studentID) {
     return {
         studentID: 12345,
         studentName: "soyoung",
         courseCompleted: false,
-        gender: GenderType.Female
+        gender: 'female'
     };
 }
 //매개변수 타입으로도 사용가능한 interface
