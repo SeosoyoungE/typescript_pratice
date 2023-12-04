@@ -1,4 +1,10 @@
-//syntax
+//enum 선언 - 같은유형을 하나로 묶는 요소
+//spring enum(문자형 열거) 선언법
+enum GenderType{
+  Male ='male',
+  Female='female'
+}
+
 let studentID: number = 12345;
 let studentName: string = "soyoung";
 let courseCompleted: boolean = false;
@@ -7,12 +13,13 @@ let student1={
     studentID: 12345,
     studentName: "soyoung",
     courseCompleted: false,
+    gender: GenderType.Male
 }
 interface Student {
   readonly studentID: number;
-  studentName?: string; //optional
+  studentName?: string; 
   courseCompleted: boolean;
-  //method정의법
+  gender: GenderType;
   //addComment(comment:string):string
   addComment?:(comment:string)=>string
 }
@@ -22,6 +29,7 @@ function getStudentDetails(studentID: number): Student {
     studentID: 12345,
     studentName: "soyoung",
     courseCompleted: false,
+    gender: GenderType.Female
   };
 }
 
