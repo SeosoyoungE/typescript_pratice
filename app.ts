@@ -9,7 +9,7 @@ let studentID: number = 12345;
 let studentName: string = "soyoung";
 let courseCompleted: boolean = false;
 
-let student1={
+let student1:Student={
     studentID: 12345,
     studentName: "soyoung",
     courseCompleted: false,
