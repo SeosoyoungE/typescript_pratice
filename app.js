@@ -1,12 +1,14 @@
-//함수의 타입선언 방법: 변수타입, 반환타입
-//선택적 파라미터로 만들고 값이 들어오지 않았을때 undefined가 
-//출력되는걸 방지하기위해 기본매개변수 선언(선택적표시인 ?삭제)
-function greet(message, name) {
-    if (message === void 0) { message = 'Hi'; }
-    if (name === void 0) { name = 'user!'; }
-    console.log("".concat(message, ", ").concat(name));
-}
-//함수 호출 결과
-greet(); //Hi, user!
-greet('Hello'); //Hello, user!
-greet('Hello', 'soyoung'); //Hello, user!
+//class 사용법
+var user = /** @class */ (function () {
+    function user() {
+        var _this = this;
+        this.userInfo = function () {
+            console.log("".concat(_this.name, "\uC758 \uB098\uC774\uB294 ").concat(_this.age, ", \uC9C1\uC5C5\uC740 ").concat(_this.job));
+        };
+    }
+    return user;
+}());
+var user1 = new user();
+user1.age = 25;
+user1.name = 'soyoung';
+user1.userInfo();
